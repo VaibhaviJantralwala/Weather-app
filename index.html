@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+
+  <!-- IMPORT ICONS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+  
+<main class="main-container">
+
+  <header class="input-container">
+    <input type="text" class="city-input" placeholder="Search City">
+        <button class="search-btn">
+          <span class="material-symbols-outlined">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </span>
+        </button>
+  </header>
+
+  <section class="weather-info" style="display:none">
+
+    <div class="location-date-container">
+      <div class="location">
+        <span class="material-symbols-outlined">
+          <i class="fa-solid fa-location-dot"></i>
+        </span>
+        <h4 class="country-txt">Vadodara</h4>
+      </div>
+      <h5 class="current-date-txt regular-txt">Thursday, 27 July</h5>
+    </div>
+
+    <div class="weather-summary-container">
+      <img src="assets/assets/weather/clouds.svg" class="weather-summary-img">
+      <div class="weather-summary-info">
+        <h1 class="temp-txt">29 °C</h1>
+        <h3 class="condition-text regular-txt">Cloudy</h3>
+      </div>
+    </div>
+
+    <div class="weather-conditions-container">
+      <div class="condition-item">
+          <i class="fa-solid fa-droplet"></i>
+          <div class="condition-info">
+          <h5 class="regular-txt">Humidity</h5>
+          <h5 class="humidity-value-txt">55 %</h5>
+        </div>
+      </div>
+
+      <div class="condition-item">
+          <i class="fa-solid fa-wind"></i>
+          <div class="condition-info">
+          <h5 class="regular-txt">Wind Speed</h5>
+          <h5 class="humidity-value-txt">2 M/s</h5>
+        </div>
+      </div>
+    </div>
+
+    <div class="forecast-items-container">
+      <div class="forecast-item">
+        <h5 class="forecast-item-date regular-txt">24 July</h5>
+        <img src="assets/assets/weather/thunderstorm.svg" class="forecast-item-img">
+        <h5 class="forecast-item-temp">27 °C</h5>
+      </div>
+      <div class="forecast-item">
+        <h5 class="forecast-item-date regular-txt">22 July</h5>
+        <img src="assets/assets/weather/thunderstorm.svg" class="forecast-item-img">
+        <h5 class="forecast-item-temp">28 °C</h5>
+      </div>
+      <div class="forecast-item">
+        <h5 class="forecast-item-date regular-txt">20 July</h5>
+        <img src="assets/assets/weather/thunderstorm.svg" class="forecast-item-img">
+        <h5 class="forecast-item-temp">29 °C</h5>
+      </div>
+      <div class="forecast-item">
+        <h5 class="forecast-item-date regular-txt">19 July</h5>
+        <img src="assets/assets/weather/thunderstorm.svg" class="forecast-item-img">
+        <h5 class="forecast-item-temp">27 °C</h5>
+      </div>
+    </div>
+  </section>
+
+  <section class="search-city section-message">
+    <img class="message-img" src="assets/assets/message/search-city.png">
+    <div>
+      <h1>Search city</h1>
+      <h4 class="regular-txt">
+        Find your city's weather forecast
+      </h4>
+    </div>
+  </section>
+
+  <!-- <section class="search-city section-message">
+    <img class="message-img" src="assets/assets/message/not-found.png">
+    <div>
+      <h1>Error!</h1>
+      <h4 class="regular-txt">
+        Come back later After a few Minutes. Sorry for the inconvineance.
+      </h4>
+    </div>
+  </section> -->
+
+</main>
+
+
+</body>
+</html>
